@@ -8,13 +8,13 @@ import { FormularioBasicoComponent } from './formulario-basico/formulario-basico
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioBasicoComponent
+     FormularioBasicoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [  FormularioBasicoComponent ]
 })
 export class AppModule { }

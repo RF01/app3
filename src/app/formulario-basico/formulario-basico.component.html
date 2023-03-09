@@ -1,1 +1,26 @@
-<p>formulario-basico works!</p>
+<h1>formulario-basico Tarea 3 Aprendizaje</h1>
+<div>
+    <label for="" #nombrePertenece >{{tipo.getNombre()}} </label> <br>
+
+    <input type="text" #datosCambia>
+    <br>
+    <button class="btn btn-primary" (click)="pulsar(datosCambia.value)">Boton</button>
+    <br>
+     <p>Datos cambian:{{datosCambia.value}} datos pertenece: {{tipo.tipo}}  Datos2 cambian2:{{datosCambiaKeyUp.value}}</p>
+
+
+    <!-- 
+     <button type="button" [disabled]="isUnchanged">Disabled Button</button> -->
+     <!-- Bind button disabled state to `isUnchanged` property -->
+
+    <input type="button" value="Cambiar"  (click)="pulsar(datosCambia.value)"  > 
+
+
+  
+
+    <br>
+    <p>introduciendoDatos keyUp: {{datosCambiaKeyUp.value}}</p>
+    <input type="text" #datosCambiaKeyUp (keyup)="0" disabled><br>
+
+
+</div>
